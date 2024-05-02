@@ -1,0 +1,104 @@
+.secao_banner{
+  width: 100%;
+  height: 90vh;
+  max-height: 720px;
+  background-image: url('../../public/banner-home.png');
+  background-color: #f9db79;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 450px;
+}
+
+.secao_banner h1{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30vh;
+  font-size: 99px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.secao{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.secao div{
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.secao div p{
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1em;
+  padding: 0 20px;
+}
+
+.secao span{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.secao div h2{
+  font-size: 2em;
+}
+
+.secao img{
+  width: 50%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .secao_banner{
+    height: 100vh;
+    background-size: 300px;
+    background-position-y: 30vh;
+  }
+  .secao_banner h1{
+    font-size: 3em;
+    padding-top: 45vh;
+  }
+  .secao div{
+    width: 100%;
+    margin: 50px 0;
+  }
+  .secao img{
+    width: 100%;
+    height: auto;
+  }
+  .secao_eventos {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .secao_banner{
+    height: 100vh;
+    background-size: 250px;
+    background-position-y: 35vh;
+  }
+  
+  .secao_banner h1{
+    font-size: 3em;
+    padding-top: 40vh;
+  }
+  
+  .secao div{
+    width: 100%;
+    margin: 50px 0;
+  }
+  .secao img{
+    width: 100%;
+    height: auto;
+  }
+  .secao_eventos {
+    flex-wrap: wrap-reverse;
+  }
+}

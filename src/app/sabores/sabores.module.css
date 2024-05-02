@@ -1,0 +1,91 @@
+.topo_container{
+  width: 100%;
+  height: 90vh;
+  min-height: 550px;
+  background-image: url('../../../public/banner-sabores.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.topo_container h1{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 35vh;
+  font-size: 95px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.sabores_container{
+  text-align: center;
+  width: 100%;
+  max-width: 980px;
+  margin: 80px auto;
+}
+
+.card_container{
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card{
+  width: calc((980px - 80px) / 3);
+  height: 300px;
+  box-shadow: 1px 1px 10px 1px rgb(212, 212, 212);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.card img{
+  width: 200px;
+  height: auto;
+}
+
+.card span{
+  font-weight: bold;
+}
+
+.card p{
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+
+  .topo_container h1{
+    font-size: 3em;
+    padding-top: 45vh;
+  }
+
+  .card_container{
+    gap: 30px;
+  }
+  .card{
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .topo_container h1{
+    font-size: 3em;
+    padding-top: 55vh;
+  }
+  .card_container{
+    gap: 30px;
+  }
+  .card{
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
